@@ -1,0 +1,19 @@
+
+#redBox {background-color: red;
+    position: relative;
+    display: block;
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+    left: ;}
+
+
+#blueBox {background-color: blue;
+    position: relative;
+    display: block;
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+    left: ;}
+
+
