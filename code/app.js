@@ -37,49 +37,53 @@ window.onload = function() {
                 break;};}
 
 
-
     function declareWin(a, b) {
 
-        // var blueBox = document.getElementById('blueBox');
+        var scoreBoard = document.getElementById('scoreBoard');
+        scoreBoard.style.fontSize="40px";
 
-        if (redBoxPosi1 > 500 && blueBoxPosi1 < 500) {
-            console.log('Red Wins!!!');}
-        else if (blueBoxPosi1 > 500 && redBoxPosi1 < 500) {
-            console.log('Blue Wins!!!');}
-        else {console.log("it's a race to the party!!!");};}
-
-
-    // function declareWin(a, b) {
-
-    //     var scoreBoard = document.getElementById('scoreBoard');
-
-    //     if (redBoxPosi1 > 500 && blueBoxPosi1 < 500) {
-    //         // console.log('Red Wins!!!');}
-    //         var status = document.createTextNode('Red Wins!!!');}
-    //         scoreboard.appendChild(status);
-    //     else if (blueBoxPosi1 > 500 && redBoxPosi1 < 500) {
-    //         // console.log('Blue Wins!!!');}
-    //         var status = document.createTextNode('Blue Wins!!!');
-    //         scoreboard.appendChild(status);}
-    //     else if (blueBoxPosi1 > 500 && redBoxPosi1 > 500) {
-    //         // console.log('Blue Wins!!!');}
-    //         var status = status;
-    //         scoreboard.appendChild(status);}
-
-    //     else {console.log("it's a race to the party!!!")
-    //         var status = status;
-    //         scoreboard.appendChild(status);};}
+        if (redBoxPosi1 > 500 && blueBoxPosi1 <= 500) {
+            status = 'Original Party Parrot Wins!!!'
+            scoreBoard.innerHTML = status;
+            congrats();}
+        else if (blueBoxPosi1 > 500 && redBoxPosi1 <= 500) {
+            status = 'Pizza Party Parrot Wins!!!';
+            scoreBoard.innerHTML = status;
+            congrats();}
+        else if (blueBoxPosi1 > 500 && redBoxPosi1 > 500) {
+            scoreBoard.innerHTML = status;
+            congrats();}
+        else {scoreBoard.innerHTML = "it's a race to the party!!!";};}
 
 
-// ideas
-    // have declareWin() upate the scoreboard div
-    // exit for loop
-    // players select parrots
-    // reset game and keep track of prior wins
-    // andrew wk 'Welcome to the party friend.  Enjoy a slice of fine pizza and the festivities, winner!'
-    // background and images scale right
+    function congrats() {
+        document.getElementById("congrats").style.display="inline-block";}
+    //    document.getElementById("newGame").style.display="inline-block";}
+    //         newGame()}
 
-    // can go backwards
 
+    // function newGame() {
+    //     var newGame = document.getElementById("newGame");
+    //     newGame.addEventListener("mousedown", console.log("click worked"));
+
+
+    //     // on click reset game
+    //     // on click capture winner's name and score +=1
+
+    // }
 
 ;}
+
+// ideas
+    // players select parrots
+    // reset game and keep track of prior wins
+    // background and images scale right - office hours (I'm shooting in the dark on CSS)
+    // better layout - how to make more portfolio calibre
+
+
+// done
+    // can go backwards
+    // have declareWin() upate the scoreboard div
+    // exit for loop
+    // directions top right corner
+    // andrew wk 'Welcome to the party friend.  Enjoy the festivities and a slice of fine pizza, winner!'
