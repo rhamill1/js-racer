@@ -14,7 +14,7 @@
     background-repeat: no-repeat;}
 
 #congrats {
-    background-image: url('images/pizza_congrats.jpg');
+    background-image: url('images/pizza_congrats_nobg/pizza_congrats.png');
     background-repeat: no-repeat;
     color: white;
     height: 85%;
@@ -24,10 +24,11 @@
     display: none;
     font-family: 'Suez One', serif;
     font-size: 20px;
-    padding: 20px 100px 20px 20px;
+    padding: 20px 100px 37px 100px;
     position: absolute;
     right: 0px;
-    top: 20px;}
+    top: 25px;
+    bottom: 0px;}
 
 #newGame {
     display: none;
@@ -39,7 +40,9 @@
     display: inline-block;
     height: 30px;
     width: 650px;
-    color: white;
+    color: #f9ee02;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
     font-family: 'Suez One', serif;
     font-size: 20px;
     margin: 20px 0 0 20px;}
@@ -52,7 +55,7 @@
     display: block;
     height: 33px;
     width: 33px;
-    margin: 450px 0 0 20px;
+    margin: 465px 0 0 20px;
     /*padding: 0 0 0 0;*/
     /*border: solid black 2px;*/
     left: 15px;}
@@ -69,5 +72,13 @@
     /*border: solid black 2px;*/
     left: ;}
 
-
-
+#message {
+    color: #f9ee02;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-family: 'Suez One', serif;
+    font-size: 18px;
+    margin: 25px 0 25px 50px;
+    width:  700px;
+    display: none;
+}

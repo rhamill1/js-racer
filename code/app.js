@@ -57,7 +57,8 @@ window.onload = function() {
 
 
     function congrats() {
-        document.getElementById("congrats").style.display="inline-block";}
+        document.getElementById("congrats").style.display="inline-block";
+        document.getElementById("message").style.display="inline-block";}
     //    document.getElementById("newGame").style.display="inline-block";}
     //         newGame()}
 

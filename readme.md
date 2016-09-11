@@ -60,3 +60,6 @@ Here's a screenshot of what this could look like:
 - JavaScript [documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - An [excellent resource](https://developer.mozilla.org/en-US/docs/Web/Events) for working with the DOM in vanilla JavaScript resource for students
 - [Should you learn DOM manipulation in JavaScript before jQuery?](https://www.reddit.com/r/javascript/comments/3hpm1v/should_i_learn_dom_manipulation_with_raw/)
+
+
+Thanks to 8bit font by http://fontvir.us
